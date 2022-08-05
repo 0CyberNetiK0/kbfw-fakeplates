@@ -69,7 +69,23 @@ kbfw labs.....
 
 
 
+--------------------/////////////////Add This In Client Side/////////////--------------\
 
+function plate()
+if Config.isVehicleOwned and not IsVehicleOwned
+(trim(GetVehicleNumberPlateText(vehicle))) then 
+    return true 
+end
+return false
+end
+
+------------/////////And Triger Where The Plate is Grabing/////////////------------------
+
+plate()
+
+---------------/////////////Add in config.lua///////////////-----------------
+
+isVehicleOwned = true,
 
 
 
